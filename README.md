@@ -1,7 +1,4 @@
 # Website Checker Extension (IP Lookup, ISP, Country, and more)
-
-## Description
-
 The Website Checker Extension is a tool designed to provide detailed information about websites. By using the services of ip-api.com and check-host.net, this extension can retrieve a wide range of data, including IP addresses, Internet Service Providers (ISP), country of origin, and much more. Whether you are a developer, network administrator, or just someone curious about the details of a website, this extension offers a solution for your needs.
 
 ## Features

@@ -7,6 +7,9 @@ The Website Checker Extension is a tool designed to provide detailed information
 - **ISP Information**: Identify the Internet Service Provider associated with the website.
 - **Geolocation Data**: Determine the country and city where the website's server is located.
 
+## Preview
+![Capture](https://github.com/user-attachments/assets/6b012d7e-7417-426c-b142-cec898790b7a)
+
 ## How It Works
 
 We use 2 external website:

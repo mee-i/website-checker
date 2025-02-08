@@ -27,7 +27,7 @@ To use the Website Checker Extension, simply open the url on web browser, this e
 
 ## Todo
 
-- Relese on Chrome Web Extension?
+- Release on Chrome Web Extension?
 
 ## License
 

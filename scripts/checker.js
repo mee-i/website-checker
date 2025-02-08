@@ -36,6 +36,7 @@ chrome.runtime.sendMessage(
     resultDiv.style.zIndex = "999999";
     resultDiv.style.fontSize = "12px";
     resultDiv.style.margin = "5px";
+    resultDiv.style.color = "#212212"
     resultDiv.innerHTML = `
     Website Checker | IP: <a href="https://${response.query}">${response.query}</a> ${countryCodeToFlag(response.countryCode)} ${response.isp} <a href="https://check-host.net/ip-info?host=${response.query}">More Info</a>
   `;

@@ -23,7 +23,18 @@ To use the Website Checker Extension, simply open the url on web browser, this e
 
 ## Installation
 
-- Chrome Web Extension (not available now)
+- Manual installation
+  1. Download ZIP
+  3. Extract ZIP
+  4. Go to chrome://extensions
+  5. Enable developer mode on right side
+  6. Load unpacked
+  7. Browse website-checker folder
+  8. Select
+  9. Done!
+
+- Chrome Web Extension 
+  not available now, because i don't have money hehe :)
 
 ## Todo
 

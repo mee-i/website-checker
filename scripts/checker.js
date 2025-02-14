@@ -24,6 +24,7 @@ chrome.runtime.sendMessage(
     console.log(response);
 
     const resultDiv = document.createElement("div");
+    resultDiv.id = "website-checker";
     resultDiv.style.position = "fixed";
     resultDiv.style.bottom = "0";
     resultDiv.style.right = "0";
@@ -37,8 +38,35 @@ chrome.runtime.sendMessage(
     resultDiv.style.fontSize = "12px";
     resultDiv.style.margin = "5px";
     resultDiv.style.color = "#212212"
+    resultDiv.style.userSelect = "none";
+    resultDiv.style.display = "flex";
+    resultDiv.style.flexDirection = "row";
+    resultDiv.style.alignItems = "center";
+    resultDiv.style.justifyContent = "center";
     resultDiv.innerHTML = `
-    Website Checker | IP: <a href="https://${response.query}">${response.query}</a> ${countryCodeToFlag(response.countryCode)} ${response.isp} <a href="https://check-host.net/ip-info?host=${response.query}">More Info</a>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      .wc-button {
+        background-color: rgba(0, 0, 0, 0);
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        height: fit-content;
+        width: fit-content;
+        margin: 0;
+        cursor: pointer;
+        font-size: 0px !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .wc-button span {
+        font-size: 15px;
+        font-weight: 550;
+      }
+    </style>
+    <button class="wc-button"><span class="material-symbols-rounded">arrow_drop_down</span></button><p style="margin: 0px;">IP: <a href="https://${response.query}">${response.query}</a> ${countryCodeToFlag(response.countryCode)} ${response.isp} <a href="https://check-host.net/ip-info?host=${response.query}">More Info</a></p>
   `;
     document.body.appendChild(resultDiv);
   }
